@@ -45,7 +45,7 @@ const ChartComponent = ({id}) => {
         chartRef.current.destroy(); // 组件卸载时销毁chart实例
       }
     }
-  }, []); // 依赖项为空数组，这段逻辑仅在组件挂载时运行
+  }); // 依赖项为空数组，这段逻辑仅在组件挂载时运行
 
   return (<canvas id={`salesChart${id}`} className="h-64"></canvas> );
 };

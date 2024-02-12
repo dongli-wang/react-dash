@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const ActiveUsers = () => {
   // useState Hook用于在组件内部创建一个状态变量userCount和一个设置该变量的函数setUserCount
