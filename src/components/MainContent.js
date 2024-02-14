@@ -12,7 +12,8 @@ const MainContent = () => {
         <Card title="Monthly Sales" 
               content="Compared to last month, our sales have increased by 25%."/>
         <Card title="Active User" content={ActiveUsers} />
-        <Card title="BTC Coindesk indices" content={() => <DataComponent url='https://api.coindesk.com/v1/bpi/currentprice.json' />} />
+        <Card title="BTC Coindesk indices" 
+              content={ ()=> <DataComponent url='https://api.coindesk.com/v1/bpi/currentprice.json' />} />
         {/* Add more Card components as needed */}
       </div>
       {/* Additional content */}

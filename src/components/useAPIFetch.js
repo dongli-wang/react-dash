@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 // useFetch Hook接受一个URL作为参数，并返回数据、加载状态和错误信息
-const useFetch = (url) => {
+const useAPIFetch = (url) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -22,11 +22,10 @@ const useFetch = (url) => {
         setLoading(false);
       }
     };
-
     fetchData();
   }, [url]); // 依赖项数组中的URL确保了当URL变化时重新获取数据
 
   return { data, loading, error };
 };
 
-export default useFetch;
+export default useAPIFetch;
