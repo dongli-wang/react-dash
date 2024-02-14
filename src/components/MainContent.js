@@ -2,6 +2,7 @@ import React from 'react';
 import Card from './Card'; // Assume Card is another component you will create
 import ActiveUsers from './ActiveUsers';
 import ChartComponent from './ChartComponent';
+import DataComponent from './DataComponent';
 
 const MainContent = () => {
   return (
@@ -11,6 +12,7 @@ const MainContent = () => {
         <Card title="Monthly Sales" 
               content="Compared to last month, our sales have increased by 25%."/>
         <Card title="Active User" content={ActiveUsers} />
+        <Card title="BTC Coindesk indices" content={() => <DataComponent url='https://api.coindesk.com/v1/bpi/currentprice.json' />} />
         {/* Add more Card components as needed */}
       </div>
       {/* Additional content */}
