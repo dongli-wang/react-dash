@@ -10,9 +10,10 @@ const DataComponent = ({ url }) => {
 
   return (
     <div>
-      <pre>USD:{JSON.stringify(
+      {/* <pre>USD:{JSON.stringify(
                    JSON.parse(
-                        JSON.stringify(data, null, 2)).bpi.USD.rate)}</pre>
+                        JSON.stringify(data, null, 2)).bpi.USD.rate)}</pre> */}
+      <pre>USD:{data.bpi.USD.rate}</pre>
     </div>
   );
 };
